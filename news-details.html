@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spielplätze im Winter: Sicherheit & Pflege - Ratgeber für Spielplatzbetreiber.">
+    <title>Spielplätze im Winter: Sicherheit & Pflege | Spielplatz-Ausrüstung.de</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#8c230c', light: '#d16b54', soft: '#fdf2f0' },
+                        secondary: { DEFAULT: '#706f6f', light: '#a3a3a3', soft: '#f5f5f5' },
+                        yellow: { DEFAULT: '#f59e0b', soft: '#fef3c7', light: '#fcd34d' },
+                        sky: { DEFAULT: '#0ea5e9', soft: '#e0f2fe', light: '#7dd3fc' },
+                        mint: { DEFAULT: '#10b981', soft: '#d1fae5', light: '#6ee7b7' },
+                        cream: '#faf5f0',
+                        peach: '#fff5ee',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Poppins', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'blob': '60% 40% 30% 70% / 60% 30% 70% 40%',
+                        '4xl': '2rem',
+                        '5xl': '3rem',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(140, 35, 12, 0.15)',
+                        'glow': '0 4px 20px rgba(140, 35, 12, 0.25)',
+                        'card': '0 8px 30px rgba(0,0,0,0.08)',
+                    },
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                color: '#333',
+                                a: {
+                                    color: '#8c230c',
+                                    '&:hover': {
+                                        color: '#d16b54',
+                                    },
+                                },
+                            },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Decorative Gradient Blob */
+        .gradient-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .article-content h2 {
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.75;
+            color: #374151;
+        }
+
+        .article-content ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #374151;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-white antialiased overflow-x-hidden">
+
+    <!-- Top Bar -->
+    <div class="top-bar bg-primary text-white text-sm py-2 px-4">
+        <div class="container mx-auto max-w-7xl flex justify-between items-center">
+            <span><i class="fas fa-phone mr-2"></i> 0431 / 997 933 0</span>
+            <span><i class="fas fa-truck mr-2"></i> Kostenloser Versand ab 500€</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header" class="main-header sticky top-0 z-50 bg-white shadow-sm transition-all duration-300">
+        <div class="container mx-auto max-w-7xl px-4">
+            <div class="flex justify-between items-center h-[80px]">
+                <a href="index.html" class="block transition-transform hover:scale-105">
+                    <img src="logo 3.svg" alt="Spielplatz Ausrüstung Logo" class="h-12">
+                </a>
+
+                <nav id="nav-menu" class="hidden lg:flex items-center">
+                    <ul class="flex items-center gap-1 text-sm">
+                        <li><a href="index.html"
+                                class="font-semibold text-gray-700 hover:text-primary hover:bg-primary-soft px-3 py-2 rounded-full transition-colors whitespace-nowrap">Startseite</a>
+                        </li>
+                        <li><a href="products.html"
+                                class="font-semibold text-gray-700 hover:text-primary hover:bg-primary-soft px-3 py-2 rounded-full transition-colors whitespace-nowrap">Spielplatzgeräte</a>
+                        </li>
+                        <li><a href="products.html"
+                                class="font-semibold text-gray-700 hover:text-primary hover:bg-primary-soft px-3 py-2 rounded-full transition-colors whitespace-nowrap">Sport
+                                & Urban</a>
+                        </li>
+                        <li><a href="news.html"
+                                class="font-semibold text-primary px-3 py-2 rounded-full bg-primary-soft transition-colors whitespace-nowrap">Aktuelles</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="font-semibold text-gray-700 hover:text-primary hover:bg-primary-soft px-3 py-2 rounded-full transition-colors whitespace-nowrap">Über
+                                uns</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Icon Bar -->
+                <div class="hidden lg:flex items-center gap-5">
+                    <a href="#" class="text-gray-500 hover:text-primary transition-colors text-xl"><i
+                            class="fas fa-search"></i></a>
+                    <a href="contact.html" class="text-gray-500 hover:text-primary transition-colors text-xl"><i
+                            class="far fa-user"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-primary transition-colors text-xl"><i
+                            class="far fa-heart"></i></a>
+                    <a href="cart.html" class="relative text-gray-500 hover:text-primary transition-colors text-xl">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span
+                            class="absolute -top-2 -right-2 w-5 h-5 bg-primary text-white text-xs rounded-full flex items-center justify-center font-bold">0</span>
+                    </a>
+                    <a href="contact.html"
+                        class="ml-2 inline-flex items-center justify-center px-6 py-2.5 rounded-full font-bold bg-primary text-white text-sm shadow-glow hover:-translate-y-1 hover:shadow-lg transition-all">
+                        Kontakt
+                    </a>
+                </div>
+
+                <div id="hamburger" class="lg:hidden text-2xl text-primary cursor-pointer p-2">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay"
+        class="mobile-menu fixed inset-0 bg-white z-[100] translate-x-full transition-transform duration-300 flex flex-col p-8 pt-24 lg:hidden">
+        <button id="close-menu" class="absolute top-6 right-6 text-3xl text-primary"><i
+                class="fas fa-times"></i></button>
+        <ul class="flex flex-col gap-6 text-xl">
+            <li><a href="index.html" class="font-bold text-primary">Startseite</a></li>
+            <li><a href="products.html" class="font-semibold text-gray-700">Spielplatzgeräte</a></li>
+            <li><a href="products.html" class="font-semibold text-gray-700">Sport & Urban</a></li>
+            <li><a href="news.html" class="font-semibold text-gray-700">Aktuelles</a></li>
+            <li><a href="about.html" class="font-semibold text-gray-700">Über uns</a></li>
+            <li><a href="contact.html" class="font-semibold text-gray-700">Kontakt</a></li>
+        </ul>
+        <a href="products.html"
+            class="mt-8 w-full text-center px-8 py-4 rounded-full font-bold bg-primary text-white shadow-lg">Zum
+            Shop</a>
+    </div>
+
+    <!-- Article Header Section -->
+    <section class="relative pt-16 pb-12 overflow-hidden bg-gradient-to-b from-primary-soft/50 to-white">
+        <div class="container mx-auto px-4 max-w-4xl relative z-10">
+            <!-- Breadcrumb -->
+            <nav class="flex items-center text-sm text-gray-500 mb-8 flex-wrap">
+                <a href="index.html" class="hover:text-primary transition-colors flex items-center gap-1">
+                    <i class="ri-home-4-line"></i> Startseite
+                </a>
+                <i class="ri-arrow-right-s-line text-gray-300 mx-2"></i>
+                <a href="news.html" class="hover:text-primary transition-colors">Aktuelles</a>
+                <i class="ri-arrow-right-s-line text-gray-300 mx-2"></i>
+                <span class="text-primary font-medium truncate max-w-[200px] sm:max-w-none">Spielplätze im Winter:
+                    Sicherheit & Pflege</span>
+            </nav>
+
+            <div class="text-center">
+                <span
+                    class="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-bold mb-6 tracking-wide uppercase">
+                    Ratgeber
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    Spielplätze im Winter: Sicherheit & Pflege
+                </h1>
+
+                <div class="flex items-center justify-center gap-6 text-gray-500 text-sm">
+                    <span class="flex items-center gap-2">
+                        <i class="far fa-calendar-alt text-primary"></i> 15. Dezember 2025
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="far fa-user text-primary"></i> Spielplatz-Team
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="far fa-clock text-primary"></i> 5 Min. Lesezeit
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="pb-20 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Featured Image -->
+            <div class="rounded-3xl overflow-hidden shadow-xl-soft mb-12 transform -translate-y-6">
+                <img src="imgs/Spielplatz-im-Winter-640x480.png" alt="Spielplatz im Winter"
+                    class="w-full h-auto object-cover">
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Share Sidebar (Desktop) -->
+                <div class="hidden lg:block lg:col-span-1">
+                    <div class="sticky top-32 flex flex-col gap-4">
+                        <p class="text-xs font-bold text-gray-400 text-center mb-2">WHATSAPP</p>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <div class="h-px bg-gray-200 my-2"></div>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#1DA1F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-[#0A66C2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-600 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article Text -->
+                <div class="lg:col-span-11 article-content text-lg">
+                    <p class="lead text-xl text-gray-600 font-medium mb-8">
+                        Die kalte Jahreszeit stellt besondere Anforderungen an die Sicherheit und Pflege von
+                        Spielplätzen. Schnee, Eis und Feuchtigkeit können Geräte beschädigen und neue Gefahrenquellen
+                        schaffen. In diesem Ratgeber erfahren Sie, worauf Sie als Betreiber im Winter achten müssen.
+                    </p>
+
+                    <h2>1. Regelmäßige Sichtkontrollen</h2>
+                    <p>
+                        Auch im Winter werden Spielplätze genutzt, wenn auch weniger intensiv. Dennoch ist die
+                        regelmäßige Kontrolle unerlässlich. Durch Frost und Nässe können Materialien spröde werden.
+                        Achten Sie besonders auf:
+                    </p>
+                    <ul>
+                        <li>Risse in Kunststoffteilen</li>
+                        <li>Korrosion an Metallverbindungen</li>
+                        <li>Morsche Stellen an Holzteilen, die durch Staunässe entstehen können</li>
+                    </ul>
+
+                    <h2>2. Rutschgefahr minimieren</h2>
+                    <p>
+                        Eisglätte auf Spielgeräten ist eine der größten Gefahren im Winter. Podeste, Treppen und
+                        Kletternetze können bei Frost extrem rutschig werden.
+                    </p>
+                    <div class="bg-yellow-soft border-l-4 border-yellow p-6 rounded-r-xl my-8">
+                        <h4 class="font-bold text-gray-900 mb-2 flex items-center gap-2"><i
+                                class="ri-alert-line text-yellow text-xl"></i> Wichtiger Hinweis</h4>
+                        <p class="mb-0 text-sm">
+                            Sollte die Rutschgefahr zu groß sein, ist es ratsam, bestimmte Geräte vorübergehend zu
+                            sperren oder entsprechende Warnschilder aufzustellen. Streusalz sollte auf Spielgeräten
+                            vermieden werden, da es Materialien angreifen kann. Verwenden Sie stattdessen abstumpfende
+                            Mittel wie Sand auf Wegen.
+                        </p>
+                    </div>
+
+                    <h2>3. Fallschutz im Winter</h2>
+                    <p>
+                        Loser Fallschutz wie Rindenmulch, Holzschnitzel oder Sand kann gefrieren. Wenn das Material hart
+                        gefroren ist, verliert es seine stoßdämpfende Wirkung fast vollständig. Ein Sturz auf gefrorenen
+                        Sand ist vergleichbar mit einem Sturz auf Beton.
+                    </p>
+                    <p>
+                        Bei extremem Frost sollte geprüft werden, ob der Spielplatz weiterhin sicher betrieben werden
+                        kann. Synthetische Fallschutzplatten behalten ihre Eigenschaften in der Regel besser bei,
+                        sollten aber von Eis befreit werden.
+                    </p>
+
+                    <h2>4. Wartung für das Frühjahr vorbereiten</h2>
+                    <p>
+                        Nutzen Sie die ruhigere Winterzeit, um größere Reparaturen für das Frühjahr zu planen. Bestellen
+                        Sie Ersatzteile rechtzeitig, damit zum Start der neuen Saison alles bereit ist. Eine gründliche
+                        Reinigung der Geräte zum Ende des Winters entfernt Moose und Algen, die sich in der feuchten
+                        Jahreszeit gebildet haben könnten.
+                    </p>
+
+                    <h3>Fazit</h3>
+                    <p>
+                        Ein wintersicherer Spielplatz erfordert Aufmerksamkeit, aber der Aufwand lohnt sich für die
+                        Sicherheit der Kinder. Mit regelmäßigen Kontrollen und vorbeugenden Maßnahmen kommen Ihre
+                        Spielgeräte gut durch die kalte Saison.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related News Section -->
+    <section class="py-20 bg-secondary-soft">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Das könnte Sie auch interessieren</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related Item 1 -->
+                <article
+                    class="bg-white rounded-3xl shadow-card overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="imgs/bu1717_spiel_und_kletteranlage_aktivburg_aus_stahl_01-300x300.jpg" alt="DIN Norm"
+                            class="w-full h-full object-contain bg-gray-50">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-primary uppercase mb-2">Normen & Recht</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                            <a href="news-details.html">Update zur DIN EN 1176: Was ist neu?</a>
+                        </h3>
+                        <a href="news-details.html"
+                            class="mt-auto text-sm font-semibold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                            Artikel lesen <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Item 2 -->
+                <article
+                    class="bg-white rounded-3xl shadow-card overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="imgs/barrierefreise_rollstuhlkarussell_spiellinie_gmbh_bild_02-300x300.jpg"
+                            alt="Inklusion" class="w-full h-full object-contain bg-gray-50">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-primary uppercase mb-2">Inklusion</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                            <a href="news-details.html">Barrierefreiheit: Spielplätze für alle</a>
+                        </h3>
+                        <a href="news-details.html"
+                            class="mt-auto text-sm font-semibold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                            Artikel lesen <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Item 3 -->
+                <article
+                    class="bg-white rounded-3xl shadow-card overflow-hidden group hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="imgs/bu1709_spielturm_en1176_podesthoehe_150cm_mod01-300x300.jpg" alt="Produkte"
+                            class="w-full h-full object-contain bg-gray-50">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-bold text-primary uppercase mb-2">Produkte</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
+                            <a href="news-details.html">Die neue AQUARIUS Serie ist da!</a>
+                        </h3>
+                        <a href="news-details.html"
+                            class="mt-auto text-sm font-semibold text-gray-500 hover:text-primary transition-colors flex items-center gap-1">
+                            Artikel lesen <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer bg-gray-900 pt-16 pb-8">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-10 border-b border-gray-700">
+                <!-- Logo & Description -->
+                <div class="md:col-span-1">
+                    <a href="#" class="block mb-4">
+                        <img src="logo 3.svg" alt="Spielplatz Logo" class="h-10 brightness-0 invert">
+                    </a>
+                    <p class="text-gray-400 text-sm">Hochwertige Spielplatzgeräte für Schulen, Kindergärten und
+                        öffentliche Spielplätze.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">Über uns</a>
+                        </li>
+                        <li><a href="products.html"
+                                class="text-gray-400 hover:text-white transition-colors">Projekte</a></li>
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors">Impressum</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors">Datenschutz</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Kontakt</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-primary"></i>
+                            Musterstraße 123, 12345 Kiel</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-envelope text-primary"></i>
+                            info@spielplatz.de</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-phone text-primary"></i> 0431 / 997 933 0
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Folgen Sie uns</h4>
+                    <div class="flex gap-3">
+                        <a href="#"
+                            class="w-9 h-9 bg-gray-700 text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-gray-700 text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-9 h-9 bg-gray-700 text-white rounded-full flex items-center justify-center hover:bg-primary transition-colors"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Spielplatz-Ausrüstung. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburger = document.getElementById('hamburger');
+            const closeMenu = document.getElementById('close-menu');
+            const mobileMenu = document.getElementById('mobile-menu-overlay');
+
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            });
+
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+
+</html>
